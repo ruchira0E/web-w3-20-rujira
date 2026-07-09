@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Catalog</title>
+    <title>Menu</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
     
@@ -117,6 +117,33 @@
         .btn-order:hover {
             background-color: #bf0024;
         }
+
+        /* กล่องจัดตำแหน่งปุ่มลิงก์ด้านล่างให้อยู่ตรงกลาง */
+        .nav-container {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        /* ตกแต่งปุ่มไปหน้าหมวดหมู่เมนู */
+        .btn-category {
+            background-color: #e4002b;
+            color: white;
+            text-decoration: none;
+            padding: 14px 35px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(228, 0, 43, 0.2);
+        }
+
+        .btn-category:hover {
+            background-color: #bf0024;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(228, 0, 43, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -157,6 +184,10 @@
             }
         ?>
 
+    </div>
+
+    <div class="nav-container">
+        <a href="menu_type.php" class="btn-category">ดูหมวดหมู่เมนูทั้งหมด ➔</a>
     </div>
 
 </body>
